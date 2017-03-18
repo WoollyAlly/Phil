@@ -175,14 +175,14 @@ layout: default
         							<a href="images/portfolio/full/17.jpg" data-lightbox="image"><img class="image_fade" src="images/blog/small/17.jpg" alt="Standard Post with Image"></a>
         						</div>
         						<div class="entry-title">
-        							<h2><a href="blog-single.html">{{ post.title }}</a></h2>
+        							<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
         						</div>
         						<ul class="entry-meta clearfix">
         							<li><i class="icon-calendar3"></i> 10th Feb 2014</li>
         						</ul>
         						<div class="entry-content">
         							<p>{{ post.excerpt }}</p>
-        							<a href="blog-single.html"class="more-link">Read More</a>
+        							<a href="{{ post.url }}" class="more-link">Read More</a>
         						</div>
         					</div>
                       {% endfor %}
