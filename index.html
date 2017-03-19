@@ -172,13 +172,13 @@ layout: default
                       {% for post in site.posts %}
         					<div class="entry clearfix">
         						<div class="entry-image">
-        							<a href="images/portfolio/full/17.jpg" data-lightbox="image"><img class="image_fade" src="{{background_image_path}}" alt="Standard Post with Image" /></a>
+        							<a href="images/portfolio/full/17.jpg" data-lightbox="image"><img class="image_fade" src="{{post.background_image_path}}" alt="Standard Post with Image" /></a>
         						</div>
         						<div class="entry-title">
         							<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
         						</div>
         						<ul class="entry-meta clearfix">
-        							<li><i class="icon-calendar3"></i> {{page.date | date_to_long_string }}</li>
+        							<li><i class="icon-calendar3"></i> {{post.date | date_to_long_string }}</li>
         						</ul>
         						<div class="entry-content">
         							<p>{{ post.excerpt }}</p>
